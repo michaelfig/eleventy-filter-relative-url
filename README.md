@@ -10,7 +10,7 @@ The easiest way to install this is to enable it in your `.eleventy.js` as a
 replacement for the `url` filter:
 
 ```js
-const { relativeUrl } = require('eleventy-filter-relative-url');
+const relativeUrl = require('eleventy-filter-relative-url');
 
 module.exports = function(eleventyConfig) {
   // Override the default `url` filter with a relative one.
@@ -22,17 +22,17 @@ module.exports = function(eleventyConfig) {
 
 The `relativeUrl` filter is sensitive to the rendering context, so it should be able to (without any arguments) generate the relative URL from the current page to the target.
 
-Say you are in `/some/page/markdown.md`.  The following expanded template:
+Say you are in `/some/page/markdown.md`.  The following input:
 
 ```html
 <!-- in /some/page/markdown.md -->
 This is a <a href="{{ /some/where/else | url }}">relative link</a>
 ```
 
-will expand as a relative link, like this:
+will expand with a relative link, like this:
 
 ```html
-<!-- expanded to /some/page/markdown/index.html -->
+<!-- written to _site/some/page/markdown/index.html -->
 This is a <a href="../../where/else/index.html">relative link</a>
 ```
 

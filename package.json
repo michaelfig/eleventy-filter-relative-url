@@ -1,6 +1,6 @@
 {
   "name": "eleventy-filter-relative-url",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Replacement for url filter that creates relative links",
   "main": "index.js",
   "repository": "https://github.com/michaelfig/eleventy-filter-relative-url",
