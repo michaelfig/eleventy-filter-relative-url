@@ -1,0 +1,13 @@
+{
+  "name": "eleventy-filter-relative-url",
+  "version": "0.1.0",
+  "description": "Replacement for url filter that creates relative links",
+  "main": "index.js",
+  "repository": "https://github.com/michaelfig/eleventy-filter-relative-url",
+  "author": "Michael FIG <michael+11ty@fig.org>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "@11ty/eleventy": ">= 0.12.0"
+  }
+}
