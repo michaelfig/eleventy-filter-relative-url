@@ -43,9 +43,11 @@ https://github.com/michaelfig/eleventy-filter-relative-url/issues .
 
 ## Thanks
 
-Thanks to `Raymond Camden#0144` on the 11ty Discord for noting that we can find
-the page's context via the `this` variable of a JS filter function (but not an
-arrow-function, since those aren't `this`-sensitive).
+Thanks for the [11ty Github discussion](https://github.com/11ty/eleventy/issues/648#issuecomment-596718708) that got me started.
+
+Thanks to `Raymond Camden#0144` on the 11ty Discord for the key insight that we
+can find the `page`'s context via the `this` variable of a JS filter function (but
+not an arrow-function, since those aren't `this`-sensitive).
 
 Also, thanks to the 11ty community in general.  I'm glad to be able to contribute.
 
